@@ -18,6 +18,8 @@ class Search:
 
         response = requests.get(URL)
         return response.content
+results = Search().get_search_results()
+print(results)
 
     def get_search_results_json(self):
         search_term = "the lord of the rings"
